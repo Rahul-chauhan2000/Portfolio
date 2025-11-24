@@ -96,6 +96,16 @@ section {
     background-position: center;
     min-height: 700px;
     position: relative;
+    box-shadow: 0 0 60px var(--accent-color);
+}
+
+.intro_sec .h_bg-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 30%, rgba(0, 209, 255, 0.25), transparent 60%),
+                radial-gradient(ellipse at 70% 70%, rgba(0, 209, 255, 0.15), transparent 60%);
+    pointer-events: none;
 }
 
 .ac_btn {
@@ -115,7 +125,7 @@ section {
 }
 
 .ac_btn:hover {
-    box-shadow: 8px 8px 0px var(--text-color), -8px -8px 0px var(--text-color);
+    box-shadow: 0 0 20px var(--accent-color), 0 0 40px var(--accent-color);
 }
 
 .ac_btn:hover .one {
@@ -231,4 +241,21 @@ section {
 
 .intro_sec .h_bg-image {
     filter: saturate(0.5);
+}
+
+.skills-banner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.skill-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--accent-color);
+    filter: drop-shadow(0 0 8px rgba(0, 209, 255, 0.6));
 }

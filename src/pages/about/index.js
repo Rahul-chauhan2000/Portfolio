@@ -8,7 +8,9 @@ import {
   worktimeline,
   skills,
   services,
+  education,
 } from "../../content_option";
+import { FaGraduationCap } from "react-icons/fa";
 
 export const About = () => {
   return (
@@ -37,7 +39,7 @@ export const About = () => {
         </Row>
         <Row className=" sec_sp">
           <Col lg="5">
-            <h3 className="color_sec py-4">Work Timline</h3>
+            <h3 className="color_sec py-4">Experience</h3>
           </Col>
           <Col lg="7">
             <table className="table caption-top">
@@ -53,6 +55,22 @@ export const About = () => {
                 })}
               </tbody>
             </table>
+          </Col>
+        </Row>
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Education</h3>
+          </Col>
+          <Col lg="7">
+            {education.map((item, i) => (
+              <div key={i} className="d-flex align-items-center mb-3">
+                <FaGraduationCap className="me-3" />
+                <div>
+                  <h5 className="m-0">{item.degree}</h5>
+                  <p className="m-0">{item.institution}</p>
+                </div>
+              </div>
+            ))}
           </Col>
         </Row>
         <Row className="sec_sp">
@@ -79,7 +97,7 @@ export const About = () => {
             })}
           </Col>
         </Row>
-        <Row className="sec_sp">
+        {/* <Row className="sec_sp">
           <Col lang="5">
             <h3 className="color_sec py-4">services</h3>
           </Col>
@@ -93,7 +111,7 @@ export const About = () => {
               );
             })}
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </HelmetProvider>
   );

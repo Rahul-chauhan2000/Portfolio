@@ -1,61 +1,46 @@
-const logotext = "JOHN";
+import one from "./assets/one.png";
+import two from "./assets/two.png";
+import four from "./assets/Four.png.png";
+const logotext = "RAHUL";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Rahul Chauhan",
+    description: "I’m Rahul Chauhan — I build fast, responsive, and scalable Web Experiences using React.js, Python (Flask/FastAPI), and Firebase.",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Rahul Chauhan",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "Web Developer",
+        second: "React.js • Python • Firebase",
+        third: "Fast • Responsive • Scalable",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "I build fast, responsive, and scalable Web Experiences using React.js, Python (Flask/FastAPI), and Firebase.",
+    your_img_url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "About Me",
+    aboutme: "Web Developer skilled in React.js, Python (Flask/FastAPI), Firebase, and Manual Testing. Completed Internship at Codsoft with focus on performance optimization — achieved 30% faster load time & 95% score on Google PageSpeed Insights. Strong understanding of SDLC, STLC, and writing functional test cases. Passionate about clean UI and scalable backend solutions.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
+const worktimeline = [
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Web Development Intern",
+        where: "Codsoft",
+        date: "Performance optimized frontend: −30% load time, 95% PageSpeed",
     },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
+const skills = [
+    { name: "React.js", value: 90 },
+    { name: "Python (Flask/FastAPI)", value: 85 },
+    { name: "Firebase", value: 80 },
+    { name: "JavaScript", value: 90 },
+    { name: "HTML", value: 95 },
+    { name: "CSS", value: 90 },
+    { name: "Node.js", value: 75 },
+    { name: "MongoDB", value: 70 },
+    { name: "SQL", value: 80 },
+    { name: "Git", value: 85 },
 ];
 
 const services = [{
@@ -72,86 +57,43 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+const dataportfolio = [
+    {
+        img: one,
+        description: "Fashion Style Website (React + Firebase): Auth, realtime DB, ML recommendations using Myntra dataset.",
+        link: "https://github.com/Rahul-chauhan2000/Fashion-Style-website",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: two,
+        description: "Laptop Price Prediction (ML): Regression, feature engineering, MSE & R² evaluation.",
+        link: "https://github.com/Rahul-chauhan2000",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: four,
+        description: "3D Carousel UI Component (React + Vite + CSS 3D)",
+        link: "https://github.com/Rahul-chauhan2000/3d-carousel",
     },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+    YOUR_EMAIL: "rc777414@gmail.com",
+    YOUR_FONE: "7078931309",
+    description: "Open to roles in frontend/backend engineering. Let’s build clean UI and scalable APIs.",
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",
     YOUR_USER_ID: "user_id",
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/Rahul-chauhan2000",
+    linkedin: "https://www.linkedin.com/in/rahul-chauhan-101726370/",
+    instagram: "https://www.instagram.com/rahul_chauhan839/A",
+    mail: "mailto:rc777414@gmail.com",
 };
+const education = [
+    { degree: "MCA", institution: "Galgotias University" },
+    { degree: "B.Sc (Maths)", institution: "[Institution]" },
+];
 export {
     meta,
     dataabout,
@@ -163,4 +105,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    education,
 };

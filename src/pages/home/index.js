@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiMysql, SiFirebase, SiPython, SiGit } from "react-icons/si";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 
@@ -41,7 +42,7 @@ export const Home = () => {
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
-                      My Portfolio
+                      Projects
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
@@ -59,6 +60,18 @@ export const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="skills-banner">
+          <SiHtml5 className="skill-icon" />
+          <SiCss3 className="skill-icon" />
+          <SiJavascript className="skill-icon" />
+          <SiReact className="skill-icon" />
+          <SiNodedotjs className="skill-icon" />
+          <SiMongodb className="skill-icon" />
+          <SiMysql className="skill-icon" />
+          <SiFirebase className="skill-icon" />
+          <SiPython className="skill-icon" />
+          <SiGit className="skill-icon" />
         </div>
       </section>
     </HelmetProvider>
